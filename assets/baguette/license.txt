@@ -1,0 +1,11 @@
+Model Information:
+* title:	Baguette Backpack | DAE Final Assignment
+* source:	https://sketchfab.com/3d-models/baguette-backpack-dae-final-assignment-4cbbf4bc915f4addab96815b6891c194
+* author:	Michalina "Miszla" Gąsienica-Laskowy (https://sketchfab.com/Miszla)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Baguette Backpack | DAE Final Assignment" (https://sketchfab.com/3d-models/baguette-backpack-dae-final-assignment-4cbbf4bc915f4addab96815b6891c194) by Michalina "Miszla" Gąsienica-Laskowy (https://sketchfab.com/Miszla) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -16,15 +16,8 @@
 embedded
 arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
     <a-camera gps-camera rotation-reader> </a-camera>
-      <a-text
-        id="texto"
-        value="This content will always face you."
-        look-at="[gps-camera]"
-        scale="120 120 120"
-        
-      ></a-text>
-      <a-entity id="pokemon" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.10 0.10 0.10"  animation-mixer/>
-      <a-entity id="baguette" gltf-model="./assets/baguette/scene.gltf" rotation="0 180 0" scale="0.10 0.10 0.10"  animation-mixer/>
+      <a-entity id="pokemon" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.10 0.10 0.10" position ="1 1 -1" animation-mixer/>
+      <a-entity id="baguette" gltf-model="./assets/baguette/scene.gltf" rotation="0 180 0"   position ="-1 -1 -1" animation-mixer/>
       
     </a-scene>
   </body>

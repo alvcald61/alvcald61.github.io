@@ -16,15 +16,15 @@ navigator.geolocation.getCurrentPosition((point) => {
 
   texto.setAttribute(
     "gps-entity-place",
-    `latitude: ${Latitude}; longitude: ${Longitude}`
+    `latitude: ${Latitude}; longitude: ${Longitude};`
   );
   pokemon.setAttribute(
     "gps-entity-place",
-    `latitude: ${Latitude}; longitude: ${Longitude}`
+    `latitude: ${Latitude}; longitude: ${Longitude};`
   );
 
   baguette.setAttribute(
     "gps-entity-place",
-    `latitude: ${Latitude}; longitude: ${Longitude}`
+    `latitude: ${Latitude}; longitude: ${Longitude};`
   );
 });

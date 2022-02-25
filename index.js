@@ -1,12 +1,9 @@
 //gps-entity-place="latitude: <add-your-latitude>; longitude: <add-your-longitude>;"
 
-let Latitude = 0;
-let Longitude = 0;
+let Latitude = -11.997557;
+let Longitude = -77.075887;
 
-var texto = document.querySelector("a-text");
 var imagen = document.querySelector("a-entity");
-
-var textoSelect = texto.querySelector("#texto");
 var pokemon = document.querySelector("#pokemon");
 var baguette = document.querySelector("#baguette");
 
@@ -14,10 +11,6 @@ navigator.geolocation.getCurrentPosition((point) => {
   Latitude = point.coords.latitude;
   Longitude = point.coords.longitude;
 
-  texto.setAttribute(
-    "gps-entity-place",
-    `latitude: ${Latitude}; longitude: ${Longitude};`
-  );
   pokemon.setAttribute(
     "gps-entity-place",
     `latitude: ${Latitude}; longitude: ${Longitude};`

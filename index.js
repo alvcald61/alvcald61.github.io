@@ -8,6 +8,7 @@ var imagen = document.querySelector("a-entity");
 
 var textoSelect = texto.querySelector("#texto");
 var pokemon = document.querySelector("#pokemon");
+var baguette = document.querySelector("#baguette");
 
 navigator.geolocation.getCurrentPosition((point) => {
   Latitude = point.coords.latitude;
@@ -18,6 +19,11 @@ navigator.geolocation.getCurrentPosition((point) => {
     `latitude: ${Latitude}; longitude: ${Longitude}`
   );
   pokemon.setAttribute(
+    "gps-entity-place",
+    `latitude: ${Latitude}; longitude: ${Longitude}`
+  );
+
+  baguette.setAttribute(
     "gps-entity-place",
     `latitude: ${Latitude}; longitude: ${Longitude}`
   );

@@ -7,7 +7,7 @@ var texto = document.querySelector("a-text");
 var imagen = document.querySelector("a-entity");
 
 var textoSelect = texto.querySelector("#texto");
-var pokemon = texto.querySelector("#pokemon");
+var pokemon = document.querySelector("#pokemon");
 
 navigator.geolocation.getCurrentPosition((point) => {
   Latitude = point.coords.latitude;

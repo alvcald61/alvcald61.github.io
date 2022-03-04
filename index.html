@@ -11,7 +11,12 @@
         THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
     </script>
       <link rel="stylesheet" type="text/css" href="./style.css"/>
-  </head>
+    <script>
+      AFRAME
+
+    </script>
+ 
+    </head>
 
   <body style="margin: 0; overflow: hidden;">
     <div id="text" class="centered instructions"></div>
@@ -19,12 +24,32 @@
     vr-mode-ui="enabled: false"
 embedded
 arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-    <a-camera gps-camera rotation-reader> </a-camera>
+    
+<a-assets>
+  <a-asset-item
+    scale="0.1 0.1 0.1"
+    id="androRobot"
+    src="assets/uploads_files_2894278_Robot.glb"
+  >
+  </a-asset-item>
+  <a-asset-item
+    id="beastRobot"
+    src="assets/uploads_files_2100846_Alien-Animal_1_5_Baked(1).gltf"
+  ></a-asset-item>
+</a-assets>
+
+
+
+    <a-marker preset="hiro" marcador>
+      <a-entity gltf-model="assets/uploads_files_2100846_Alien-Animal_1_5_Baked(1).gltf"> </a-entity>
+    </a-marker>
+
+    <a-camera gps-camera="minDistance:40;" rotation-reader> </a-camera>
       <a-entity id="image"  animation-mixer/>
     </a-scene>
 
     <div class="centered">
-      <button data-action="change">?</button>
+      <button data-action="change">Siguiente Elemento</button>
     </div>
 
 

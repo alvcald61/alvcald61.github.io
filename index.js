@@ -9,14 +9,28 @@ let models = [
     url: "./assets/magnemite/scene.gltf",
     rotation: "0 180 0",
     scale: "0.10 0.10 0.10",
-    position: "1 1 -1",
+    position: "1 10 -10",
   },
   {
-    name: "magnamite",
+    name: "dgsdf",
+    url: "assets/uploads_files_2894278_Robot.glb",
+    rotation: "0 180 0",
+    scale: "0.10 0.10 0.10",
+    position: "1 10 -10",
+  },
+  {
+    name: "magnaghfghjmite",
+    url: "assets/uploads_files_2100846_Alien-Animal_1_5_Baked(1).gltf",
+    rotation: "0 180 0",
+    scale: "0.10 0.10 0.10",
+    position: "1 10 -10",
+  },
+  {
+    name: "Baguette",
     url: "./assets/baguette/scene.gltf",
     rotation: "0 180 0",
-    scale: "1.1 1.1 1.1",
-    position: "1 1 -1",
+    scale: "1 1 1",
+    position: "1 2 -1",
   },
 ];
 
@@ -40,13 +54,12 @@ function loadModel(model) {
   setLocation(image);
 }
 
-function setLocation(component) {
+async function setLocation(component) {
   let Latitude = -11.997557;
   let Longitude = -77.075887;
-  navigator.geolocation.getCurrentPosition((point) => {
+  await navigator.geolocation.getCurrentPosition((point) => {
     Latitude = point.coords.latitude;
     Longitude = point.coords.longitude;
-
     component.setAttribute(
       "gps-entity-place",
       `latitude: ${Latitude}; longitude: ${Longitude};`
